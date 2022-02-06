@@ -8,7 +8,7 @@ def main():
     if argv:
         sys.exit("ArgvError: procmax takes no argument")
     if sys.platform.startswith("linux"):
-        execute(["ulimit", "-u"])
+        execute("ulimit -p")
     else:
         print("unlimited")
     sys.exit()

@@ -13,9 +13,10 @@ def main():
         sys.exit("ArgvError: tictoc takes no argument")
     if sys.platform.startswith("win32"):
         python_cmd = "py"
+        c1 = subprocess.Popen([python_cmd, '-u', _c1.__file__], stdout=subprocess.PIPE, shell=True, creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
     else:
         python_cmd = "python3"
-    c1 = subprocess.Popen([python_cmd, '-u', _c1.__file__], stdout=subprocess.PIPE, shell=True, creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
+        c1 = subprocess.Popen([python_cmd, '-u', _c1.__file__], stdout=subprocess.PIPE, shell=True)
     c2 = subprocess.Popen([python_cmd, '-u', _c2.__file__], stdin=c1.stdout, stdout=sys.stdout, shell=True)
     for _ in range(10):
         time.sleep(2)
