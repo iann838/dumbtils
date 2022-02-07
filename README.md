@@ -2,6 +2,19 @@
 
 Dumb Utilities.
 
+## Installation
+
+With makefile:
+
+1. Install python3 (3.6+) and pip3 in your OS.
+2. Copy the `Makefile` in the repo.
+3. Run `make` on the folder with the `Makefile` or pass the `Makefile` explicitely.
+
+With pip:
+
+1. Install python3 (3.6+) and pip3 in your OS.
+2. Run `pip3 install dumbtils -U`.
+
 ## Commands
 
 * `procmax`: Return max process per user.
