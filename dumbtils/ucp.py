@@ -11,6 +11,7 @@ def main():
     bufsize = int(argv[0])
     if bufsize < 1:
         sys.exit("ArgvError: bugsize must be greater than 0")
+    # Python buffer size of 1 means line buffering, using 2 as minimum
     bufsize = max(int(argv[0]), 2)
     src_path = argv[1]
     dst_path = argv[2]

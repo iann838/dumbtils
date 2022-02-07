@@ -9,7 +9,7 @@ def main():
     begin = time.monotonic()
     execute(" ".join(argv))
     end = time.monotonic()
-    print(f"Exited in {end - begin}s")
+    print(end - begin)
     sys.exit()
 
 

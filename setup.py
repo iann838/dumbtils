@@ -11,7 +11,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name="dumbtils",
-    version="0.1.3",
+    version="0.2.0",
     author="Paaksing",
     author_email="paaksingtech@gmail.com",
     url="https://github.com/paaksing/dumbtils",
@@ -34,6 +34,7 @@ setup(
             'timeprog=dumbtils.timeprog:main',
             'ucp=dumbtils.ucp:main',
             'tictoc=dumbtils.tictoc:main',
+            'bingonacci=dumbtils.bingonacci:main',
         ]
     }
 )
