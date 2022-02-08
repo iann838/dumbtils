@@ -15,6 +15,8 @@ With pip:
 1. Install python3 (3.6+) and pip3 in your OS.
 2. Run `pip3 install dumbtils -U`.
 
+Note: If new commands are not found after installing, try reloading shell or virtual environment.
+
 ## Commands
 
 * `procmax`: Return max process per user.
