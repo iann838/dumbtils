@@ -1,6 +1,5 @@
 import sys
 import signal
-import time
 from functools import partial
 
 

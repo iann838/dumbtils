@@ -11,12 +11,11 @@ def fib(n):
     return fib(n - 1) + fib(n - 2)
 
 
-def bingonacci(fib_range: tuple, addends_size: int):
+def bingonacci(fib_range, addends_size: int):
     fibs = {}
     fib_range = range(fib_range)
     for i in fib_range:
         fibs[i] = fib(i)
-    addends_size = addends_size
     sum_total = 0
     for _ in range(addends_size):
         sum_total += fibs[random.choice(fib_range)]
