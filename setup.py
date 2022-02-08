@@ -11,7 +11,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name="dumbtils",
-    version="0.2.0",
+    version="0.2.1",
     author="Paaksing",
     author_email="paaksingtech@gmail.com",
     url="https://github.com/paaksing/dumbtils",
